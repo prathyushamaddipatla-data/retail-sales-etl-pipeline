@@ -51,7 +51,17 @@ Store cleaned data for analytics and reporting.
 pip install -r requirements.txt
 python etl_pipeline.py
 ```
+## Project Structure
 
+```text
+retail-sales-etl-pipeline
+│
+├── README.md
+├── Sales Dataset.csv
+├── etl_pipeline.py
+├── business_queries.sql
+└── requirements.txt
+```
 ## Author
 
 Prathyusha Maddipatla
