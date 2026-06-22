@@ -16,3 +16,12 @@ if "Unnamed: 0" in df.columns:
     df = df.drop(columns=["Unnamed: 0"])
 
 print("\nDataset cleaned successfully!")
+print("\nRevenue by Product Category:")
+
+category_sales = (
+    df.groupby("Product Category")["Total Amount"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+print(category_sales)
